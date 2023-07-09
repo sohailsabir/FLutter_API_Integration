@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_api_integration/homescreen.dart';
+import 'package:flutter_api_integration/image_upload.dart';
+import 'package:flutter_api_integration/lastExample.dart';
 import 'package:flutter_api_integration/photo.dart';
+import 'package:flutter_api_integration/server_upload_image.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +30,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Photo(),
+      home: UploadImages(),
     );
   }
 }

@@ -54,6 +54,8 @@ Future<List<PhotoModel>>getPhotoList()async{
                          leading: CircleAvatar(
                            backgroundImage: NetworkImage(snapshot.data![index].url.toString()),
                          ),
+                          title: Text("${snapshot.data![index].title}"),
+
                         ),
                       );
                     });
@@ -66,7 +68,8 @@ Future<List<PhotoModel>>getPhotoList()async{
   }
 }
 class PhotoModel{
-  String title,url;
+  String title;
+  String url;
   int id;
   PhotoModel({required this.id,required this.title,required this.url});
 }
